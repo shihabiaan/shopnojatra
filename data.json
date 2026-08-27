@@ -3,35 +3,308 @@
   "due_day": 10,
   "last_updated": "2026-08-27",
   "members": [
-    {"serial_no": 1, "name": "সদস্য ১"},
-    {"serial_no": 2, "name": "সদস্য ২"},
-    {"serial_no": 3, "name": "সদস্য ৩"},
-    {"serial_no": 4, "name": "সদস্য ৪"},
-    {"serial_no": 5, "name": "সদস্য ৫"},
-    {"serial_no": 6, "name": "সদস্য ৬"},
-    {"serial_no": 7, "name": "সদস্য ৭"},
-    {"serial_no": 8, "name": "সদস্য ৮"},
-    {"serial_no": 9, "name": "সদস্য ৯"},
-    {"serial_no": 10, "name": "সদস্য ১০"},
-    {"serial_no": 11, "name": "সদস্য ১১"},
-    {"serial_no": 12, "name": "সদস্য ১২"},
-    {"serial_no": 13, "name": "সদস্য ১৩"},
-    {"serial_no": 14, "name": "সদস্য ১৪"},
-    {"serial_no": 15, "name": "সদস্য ১৫"},
-    {"serial_no": 16, "name": "সদস্য ১৬"},
-    {"serial_no": 17, "name": "সদস্য ১৭"},
-    {"serial_no": 18, "name": "সদস্য ১৮"},
-    {"serial_no": 19, "name": "সদস্য ১৯"},
-    {"serial_no": 20, "name": "সদস্য ২০"},
-    {"serial_no": 21, "name": "সদস্য ২১"},
-    {"serial_no": 22, "name": "সদস্য ২২"},
-    {"serial_no": 23, "name": "সদস্য ২৩"},
-    {"serial_no": 24, "name": "সদস্য ২৪"},
-    {"serial_no": 25, "name": "সদস্য ২৫"}
+    {
+      "serial_no": 1,
+      "name": "রবিউল ইসলাম"
+    },
+    {
+      "serial_no": 2,
+      "name": "শাফিউল আলম"
+    },
+    {
+      "serial_no": 3,
+      "name": "ইমামুল ইসলাম"
+    },
+    {
+      "serial_no": 4,
+      "name": "সদস্য ৪"
+    },
+    {
+      "serial_no": 5,
+      "name": "সদস্য ৫"
+    },
+    {
+      "serial_no": 6,
+      "name": "সদস্য ৬"
+    },
+    {
+      "serial_no": 7,
+      "name": "সদস্য ৭"
+    },
+    {
+      "serial_no": 8,
+      "name": "সদস্য ৮"
+    },
+    {
+      "serial_no": 9,
+      "name": "সদস্য ৯"
+    },
+    {
+      "serial_no": 10,
+      "name": "সদস্য ১০"
+    },
+    {
+      "serial_no": 11,
+      "name": "সদস্য ১১"
+    },
+    {
+      "serial_no": 12,
+      "name": "সদস্য ১২"
+    },
+    {
+      "serial_no": 13,
+      "name": "সদস্য ১৩"
+    },
+    {
+      "serial_no": 14,
+      "name": "সদস্য ১৪"
+    },
+    {
+      "serial_no": 15,
+      "name": "সদস্য ১৫"
+    },
+    {
+      "serial_no": 16,
+      "name": "সদস্য ১৬"
+    },
+    {
+      "serial_no": 17,
+      "name": "সদস্য ১৭"
+    },
+    {
+      "serial_no": 18,
+      "name": "সদস্য ১৮"
+    },
+    {
+      "serial_no": 19,
+      "name": "সদস্য ১৯"
+    },
+    {
+      "serial_no": 20,
+      "name": "সদস্য ২০"
+    },
+    {
+      "serial_no": 21,
+      "name": "সদস্য ২১"
+    },
+    {
+      "serial_no": 22,
+      "name": "সদস্য ২২"
+    },
+    {
+      "serial_no": 23,
+      "name": "সদস্য ২৩"
+    },
+    {
+      "serial_no": 24,
+      "name": "সদস্য ২৪"
+    },
+    {
+      "serial_no": 25,
+      "name": "সদস্য ২৫"
+    }
   ],
   "contributions": [
-    {"member_serial": 1, "month": "2026-08", "expected_amount": 1000, "amount": 1000, "paid_date": "2026-08-05", "note": ""},
-    {"member_serial": 2, "month": "2026-08", "expected_amount": 1000, "amount": 1000, "paid_date": "2026-08-06", "note": ""}
+    {
+      "member_serial": 1,
+      "month": "2026-08",
+      "expected_amount": 1000,
+      "amount": 1000,
+      "paid_date": "2026-08-05",
+      "note": ""
+    },
+    {
+      "member_serial": 2,
+      "month": "2026-08",
+      "expected_amount": 1000,
+      "amount": 1000,
+      "paid_date": "2026-08-06",
+      "note": ""
+    },
+    {
+      "member_serial": 3,
+      "month": "2026-08",
+      "expected_amount": 1000,
+      "amount": 0,
+      "paid_date": "",
+      "note": ""
+    },
+    {
+      "member_serial": 4,
+      "month": "2026-08",
+      "expected_amount": 1000,
+      "amount": 0,
+      "paid_date": "",
+      "note": ""
+    },
+    {
+      "member_serial": 5,
+      "month": "2026-08",
+      "expected_amount": 1000,
+      "amount": 0,
+      "paid_date": "",
+      "note": ""
+    },
+    {
+      "member_serial": 6,
+      "month": "2026-08",
+      "expected_amount": 1000,
+      "amount": 0,
+      "paid_date": "",
+      "note": ""
+    },
+    {
+      "member_serial": 7,
+      "month": "2026-08",
+      "expected_amount": 1000,
+      "amount": 0,
+      "paid_date": "",
+      "note": ""
+    },
+    {
+      "member_serial": 8,
+      "month": "2026-08",
+      "expected_amount": 1000,
+      "amount": 0,
+      "paid_date": "",
+      "note": ""
+    },
+    {
+      "member_serial": 9,
+      "month": "2026-08",
+      "expected_amount": 1000,
+      "amount": 0,
+      "paid_date": "",
+      "note": ""
+    },
+    {
+      "member_serial": 10,
+      "month": "2026-08",
+      "expected_amount": 1000,
+      "amount": 0,
+      "paid_date": "",
+      "note": ""
+    },
+    {
+      "member_serial": 11,
+      "month": "2026-08",
+      "expected_amount": 1000,
+      "amount": 0,
+      "paid_date": "",
+      "note": ""
+    },
+    {
+      "member_serial": 12,
+      "month": "2026-08",
+      "expected_amount": 1000,
+      "amount": 0,
+      "paid_date": "",
+      "note": ""
+    },
+    {
+      "member_serial": 13,
+      "month": "2026-08",
+      "expected_amount": 1000,
+      "amount": 0,
+      "paid_date": "",
+      "note": ""
+    },
+    {
+      "member_serial": 14,
+      "month": "2026-08",
+      "expected_amount": 1000,
+      "amount": 0,
+      "paid_date": "",
+      "note": ""
+    },
+    {
+      "member_serial": 15,
+      "month": "2026-08",
+      "expected_amount": 1000,
+      "amount": 0,
+      "paid_date": "",
+      "note": ""
+    },
+    {
+      "member_serial": 16,
+      "month": "2026-08",
+      "expected_amount": 1000,
+      "amount": 0,
+      "paid_date": "",
+      "note": ""
+    },
+    {
+      "member_serial": 17,
+      "month": "2026-08",
+      "expected_amount": 1000,
+      "amount": 0,
+      "paid_date": "",
+      "note": ""
+    },
+    {
+      "member_serial": 18,
+      "month": "2026-08",
+      "expected_amount": 1000,
+      "amount": 0,
+      "paid_date": "",
+      "note": ""
+    },
+    {
+      "member_serial": 19,
+      "month": "2026-08",
+      "expected_amount": 1000,
+      "amount": 0,
+      "paid_date": "",
+      "note": ""
+    },
+    {
+      "member_serial": 20,
+      "month": "2026-08",
+      "expected_amount": 1000,
+      "amount": 0,
+      "paid_date": "",
+      "note": ""
+    },
+    {
+      "member_serial": 21,
+      "month": "2026-08",
+      "expected_amount": 1000,
+      "amount": 0,
+      "paid_date": "",
+      "note": ""
+    },
+    {
+      "member_serial": 22,
+      "month": "2026-08",
+      "expected_amount": 1000,
+      "amount": 0,
+      "paid_date": "",
+      "note": ""
+    },
+    {
+      "member_serial": 23,
+      "month": "2026-08",
+      "expected_amount": 1000,
+      "amount": 0,
+      "paid_date": "",
+      "note": ""
+    },
+    {
+      "member_serial": 24,
+      "month": "2026-08",
+      "expected_amount": 1000,
+      "amount": 0,
+      "paid_date": "",
+      "note": ""
+    },
+    {
+      "member_serial": 25,
+      "month": "2026-08",
+      "expected_amount": 1000,
+      "amount": 0,
+      "paid_date": "",
+      "note": ""
+    }
   ],
   "investments": [
     {
