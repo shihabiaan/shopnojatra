@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>অ্যাডমিন — স্বপ্নযাত্রা</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand"><div class="logo">স্ব</div><div><strong>স্বপ্নযাত্রা</strong><span>অ্যাডমিন প্যানেল</span></div></div>
+  <nav><a href="index.html">← পাবলিক ড্যাশবোর্ডে ফিরুন</a></nav>
+</header>
+
+<main>
+
+<div id="lockWrap" class="lock-wrap">
+  <div class="panel">
+    <p class="eyebrow">ADMIN</p>
+    <h2>পাসকোড দিন</h2>
+    <p class="muted" style="font-size:13px">এই পাসকোড শুধু ভুল করে এডিট হওয়া ঠেকানোর জন্য — যেহেতু পুরো সাইট ও data.json পাবলিক, এটা প্রকৃত নিরাপত্তা নয়।</p>
+    <input id="pin" type="password" placeholder="পাসকোড" style="margin:12px 0">
+    <button class="primary" style="width:100%" onclick="checkPin()">প্রবেশ করুন</button>
+    <p id="pinMsg" class="form-msg" style="color:var(--danger)"></p>
+  </div>
+</div>
+
+<div id="app" class="hidden">
+
+  <section class="panel">
+    <div class="panel-head"><div><p class="eyebrow">DATA</p><h2>বর্তমান ডেটা লোড করুন</h2></div></div>
+    <div class="toolbar">
+      <button class="primary" onclick="loadFromSite()">সাইটের বর্তমান data.json লোড করুন</button>
+      <label class="secondary" style="cursor:pointer;display:inline-flex;align-items:center;padding:11px 16px;border-radius:10px">
+        ফাইল থেকে লোড করুন
+        <input type="file" id="fileLoader" accept="application/json" style="display:none" onchange="loadFromFile(event)">
+      </label>
+    </div>
+    <p id="loadMsg" class="form-msg"></p>
+  </section>
+
+  <section class="panel">
+    <div class="panel-head"><div><p class="eyebrow">SETTINGS</p><h2>সংগঠনের তথ্য</h2></div></div>
+    <div class="form-grid">
+      <label>নাম<input id="orgName" value="স্বপ্নযাত্রা"></label>
+      <label>চাঁদার শেষ তারিখ (প্রতি মাসের কত তারিখ)<input id="dueDay" type="number" value="10"></label>
+    </div>
+  </section>
+
+  <section class="panel" id="members">
+    <div class="panel-head"><div><p class="eyebrow">MEMBERS</p><h2>সদস্য তালিকা</h2></div>
+      <button class="secondary small-btn" onclick="addMember()">+ নতুন সদস্য</button>
+    </div>
+    <div id="memberRows" class="checklist"></div>
+  </section>
+
+  <section class="panel" id="contributions">
+    <div class="panel-head"><div><p class="eyebrow">CONTRIBUTIONS</p><h2>এই মাসের চাঁদা পূরণ করুন</h2></div>
+      <select id="monthPick"></select>
+    </div>
+    <div class="toolbar">
+      <input id="newMonth" type="month" style="max-width:180px">
+      <button class="secondary small-btn" onclick="addMonth()">+ এই মাস যোগ করুন</button>
+      <button class="secondary small-btn" onclick="copyFromPrevMonth()">গত মাসের ডেটা কপি করুন</button>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>সদস্য</th><th>নির্ধারিত</th><th>জমা</th><th>তারিখ</th><th>নোট</th></tr></thead>
+        <tbody id="contribRows"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="panel" id="investments">
+    <div class="panel-head"><div><p class="eyebrow">INVESTMENTS</p><h2>বিনিয়োগসমূহ</h2></div>
+      <button class="secondary small-btn" onclick="addInvestment()">+ নতুন বিনিয়োগ</button>
+    </div>
+    <div id="investRows"></div>
+  </section>
+
+  <section class="panel">
+    <div class="panel-head"><div><p class="eyebrow">EXPORT</p><h2>আপডেটেড ফাইল তৈরি করুন</h2></div></div>
+    <div class="toolbar">
+      <button class="primary" onclick="generateJson()">JSON তৈরি করুন</button>
+      <button class="secondary" onclick="copyJson()">কপি করুন</button>
+      <button class="secondary" onclick="downloadJson()">data.json ডাউনলোড করুন</button>
+    </div>
+    <textarea id="jsonOut" class="jsonbox" readonly></textarea>
+    <p id="genMsg" class="form-msg"></p>
+  </section>
+
+</div>
+</main>
+
+<footer>স্বপ্নযাত্রা · এডিট করুন → JSON তৈরি করুন → ডাউনলোড → GitHub-এ আপলোড</footer>
+<script src="js/admin.js"></script>
+</body>
+</html>

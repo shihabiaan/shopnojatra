@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>স্বপ্নযাত্রা — আমাদের সঞ্চয় ও বিনিয়োগ</title>
+  <meta name="description" content="স্বপ্নযাত্রা সংগঠনের মাসিক চাঁদা, সদস্যদের পেমেন্ট, বিনিয়োগ ও আর্থিক হিসাব।">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand"><div class="logo">স্ব</div><div><strong>স্বপ্নযাত্রা</strong><span>২৫ বন্ধু · একসাথে ভবিষ্যতের পথে</span></div></div>
+  <nav>
+    <a href="#dashboard">ড্যাশবোর্ড</a>
+    <a href="#contributions">চাঁদা</a>
+    <a href="#investments">বিনিয়োগ</a>
+    <a href="#members">সদস্য</a>
+    <a href="admin.html">অ্যাডমিন</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero" id="dashboard">
+  <div>
+    <p class="eyebrow">SWAPNOJATRA · TRANSPARENCY DASHBOARD</p>
+    <h1>আমাদের টাকা, আমাদের হিসাব।</h1>
+    <p>প্রতি মাসের চাঁদা, কে দিয়েছেন, কোথায় বিনিয়োগ হয়েছে এবং বর্তমান আর্থিক অবস্থার স্বচ্ছ হিসাব এক জায়গায়।</p>
+  </div>
+  <div class="hero-card"><span>এই মাসের চাঁদা</span><b id="monthName">—</b><small id="dueSmall">পরিশোধের শেষ সময়: প্রতি মাসের ১০ তারিখ</small></div>
+</section>
+
+<section class="stats">
+  <div class="stat"><span>মোট জমা</span><strong id="totalContributions">৳0</strong></div>
+  <div class="stat"><span>মোট বিনিয়োগ</span><strong id="totalInvestments">৳0</strong></div>
+  <div class="stat"><span>হাতে/অবিনিয়োগকৃত</span><strong id="cashBalance">৳0</strong></div>
+  <div class="stat"><span>বর্তমান মাসে পরিশোধ</span><strong id="paidCount">0/0</strong></div>
+</section>
+
+<section class="panel">
+  <div class="panel-head"><div><p class="eyebrow">MONTHLY STATUS</p><h2 id="statusTitle">এই মাসের চাঁদার অবস্থা</h2></div><span class="badge" id="dueBadge">প্রতি মাসের ১০ তারিখ</span></div>
+  <div id="paymentStatus" class="member-grid"></div>
+</section>
+
+<section class="panel" id="contributions">
+  <div class="panel-head"><div><p class="eyebrow">CONTRIBUTIONS</p><h2>মাসভিত্তিক চাঁদার হিসাব</h2></div>
+    <select id="monthFilter"></select>
+  </div>
+  <div class="table-wrap"><table><thead><tr><th>সদস্য</th><th>মাস</th><th>নির্ধারিত</th><th>জমা</th><th>তারিখ</th><th>স্ট্যাটাস</th></tr></thead><tbody id="contributionRows"></tbody></table></div>
+</section>
+
+<section class="panel" id="investments">
+  <div class="panel-head"><div><p class="eyebrow">INVESTMENTS</p><h2>বিনিয়োগের তালিকা</h2></div></div>
+  <div class="investment-grid" id="investmentCards"></div>
+</section>
+
+<section class="panel" id="members">
+  <div class="panel-head"><div><p class="eyebrow">MEMBERS</p><h2>আমাদের সদস্যরা</h2></div></div>
+  <div id="membersGrid" class="member-grid"></div>
+</section>
+</main>
+
+<footer>স্বপ্নযাত্রা · হিসাব সবার জন্য স্বচ্ছ, নিয়ন্ত্রণ অ্যাডমিনের হাতে · তথ্য হালনাগাদ হয় admin.html থেকে</footer>
+<script src="js/app.js"></script>
+</body>
+</html>
