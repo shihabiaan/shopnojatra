@@ -40,6 +40,17 @@
   </section>
 
   <section class="panel">
+    <div class="panel-head"><div><p class="eyebrow">SUMMARY</p><h2>সারসংক্ষেপ (প্রতি মাসে এটাই আপডেট করুন)</h2></div></div>
+    <p class="muted" style="margin-top:-6px;font-size:13px">আপনার খাতার মতো শুধু এই তিনটা সংখ্যা লিখুন — "হাতে থাকা টাকা" নিজে থেকেই হিসাব হয়ে যাবে। সদস্যভিত্তিক নিখুঁত হিসাব রাখার দরকার নেই।</p>
+    <div class="form-grid">
+      <label>মোট জমা (এ পর্যন্ত সর্বমোট)<input id="sumCollected" type="number" value="0"></label>
+      <label>মোট খরচ (এ পর্যন্ত সর্বমোট)<input id="sumExpenses" type="number" value="0"></label>
+      <label>মোট বিনিয়োগ (এ পর্যন্ত সর্বমোট)<input id="sumInvested" type="number" value="0"></label>
+    </div>
+    <p style="font-weight:600;color:var(--forest,#1F3A2E)">হাতে থাকবে: <span id="sumCashPreview">৳0</span></p>
+  </section>
+
+  <section class="panel">
     <div class="panel-head"><div><p class="eyebrow">SETTINGS</p><h2>সংগঠনের তথ্য</h2></div></div>
     <div class="form-grid">
       <label>নাম<input id="orgName" value="স্বপ্নযাত্রা"></label>
@@ -76,6 +87,13 @@
       <button class="secondary small-btn" onclick="addInvestment()">+ নতুন বিনিয়োগ</button>
     </div>
     <div id="investRows"></div>
+  </section>
+
+  <section class="panel" id="expenses">
+    <div class="panel-head"><div><p class="eyebrow">EXPENSES</p><h2>খরচসমূহ</h2></div>
+      <button class="secondary small-btn" onclick="addExpense()">+ নতুন খরচ</button>
+    </div>
+    <div id="expenseRows"></div>
   </section>
 
   <section class="panel">
