@@ -14,6 +14,7 @@
     <a href="#dashboard">ড্যাশবোর্ড</a>
     <a href="#contributions">চাঁদা</a>
     <a href="#investments">বিনিয়োগ</a>
+    <a href="#expenses">খরচ</a>
     <a href="#members">সদস্য</a>
     <a href="admin.html">অ্যাডমিন</a>
   </nav>
@@ -32,6 +33,7 @@
 <section class="stats">
   <div class="stat"><span>মোট জমা</span><strong id="totalContributions">৳0</strong></div>
   <div class="stat"><span>মোট বিনিয়োগ</span><strong id="totalInvestments">৳0</strong></div>
+  <div class="stat"><span>মোট খরচ</span><strong id="totalExpenses">৳0</strong></div>
   <div class="stat"><span>হাতে/অবিনিয়োগকৃত</span><strong id="cashBalance">৳0</strong></div>
   <div class="stat"><span>বর্তমান মাসে পরিশোধ</span><strong id="paidCount">0/0</strong></div>
 </section>
@@ -51,6 +53,11 @@
 <section class="panel" id="investments">
   <div class="panel-head"><div><p class="eyebrow">INVESTMENTS</p><h2>বিনিয়োগের তালিকা</h2></div></div>
   <div class="investment-grid" id="investmentCards"></div>
+</section>
+
+<section class="panel" id="expenses">
+  <div class="panel-head"><div><p class="eyebrow">EXPENSES</p><h2>খরচের হিসাব</h2></div></div>
+  <div class="table-wrap"><table><thead><tr><th>খাত</th><th>তারিখ</th><th>পরিমাণ</th><th>নোট</th></tr></thead><tbody id="expenseRows"></tbody></table></div>
 </section>
 
 <section class="panel" id="members">
