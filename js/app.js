@@ -44,12 +44,14 @@ function render() {
   $("cashBalance").textContent = money(total - invested - spent);
 
   const monthRows = members.map(m => contributions.find(c => c.member_serial === m.serial_no && c.month === currentMonth));
-  const paid = monthRows.filter(Boolean).length;
+  const isPaid = c => c && Number(c.amount) > 0;
+  const paid = monthRows.filter(isPaid).length;
   $("paidCount").textContent = `${paid}/${members.length}`;
 
   $("paymentStatus").innerHTML = members.map((m, idx) => {
     const c = monthRows[idx];
-    return `<div class="member-card"><strong>${escapeHtml(m.name)}</strong><small class="${c ? 'status-paid' : 'status-unpaid'}">${c ? '✓ জমা ' + money(c.amount) : '✕ এখনো জমা হয়নি'}</small></div>`;
+    const paidThis = isPaid(c);
+    return `<div class="member-card"><strong>${escapeHtml(m.name)}</strong><small class="${paidThis ? 'status-paid' : 'status-unpaid'}">${paidThis ? '✓ জমা ' + money(c.amount) : '✕ এখনো জমা হয়নি'}</small></div>`;
   }).join("");
 
   const months = [...new Set(contributions.map(x => x.month))];
@@ -73,7 +75,10 @@ function render() {
 
 function renderContributions(month) {
   const rows = members.map(m => ({ m, c: contributions.find(c => c.member_serial === m.serial_no && c.month === month) }));
-  $("contributionRows").innerHTML = rows.map(({ m, c }) => `<tr><td>${escapeHtml(m.name)}</td><td>${monthLabel(month)}</td><td>${money(c?.expected_amount ?? 1000)}</td><td>${money(c?.amount ?? 0)}</td><td>${dateLabel(c?.paid_date)}</td><td><span class="pill ${c ? 'paid' : 'unpaid'}">${c ? 'পরিশোধিত' : 'বাকি'}</span></td></tr>`).join("");
+  $("contributionRows").innerHTML = rows.map(({ m, c }) => {
+    const paidThis = c && Number(c.amount) > 0;
+    return `<tr><td>${escapeHtml(m.name)}</td><td>${monthLabel(month)}</td><td>${money(c?.expected_amount ?? 1000)}</td><td>${money(c?.amount ?? 0)}</td><td>${dateLabel(c?.paid_date)}</td><td><span class="pill ${paidThis ? 'paid' : 'unpaid'}">${paidThis ? 'পরিশোধিত' : 'বাকি'}</span></td></tr>`;
+  }).join("");
 }
 
 document.addEventListener('DOMContentLoaded', () => {
