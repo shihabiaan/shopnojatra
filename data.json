@@ -1,12 +1,12 @@
 {
   "org_name": "স্বপ্নযাত্রা",
   "due_day": 10,
-  "last_updated": "2026-08-29",
+  "last_updated": "2026-09-01",
   "summary": {
     "total_collected": 182000,
     "total_expenses": 4680,
     "total_invested": 100000,
-    "as_of": "2026-08"
+    "as_of": "2026-09"
   },
   "members": [
     {
@@ -982,6 +982,206 @@
       "amount": 8000,
       "paid_date": "2026-08-10",
       "note": "নতুন সদস্য হিসেবে একবারে জমা"
+    },
+    {
+      "member_serial": 1,
+      "month": "2026-09",
+      "expected_amount": 1500,
+      "amount": 0,
+      "paid_date": "",
+      "note": ""
+    },
+    {
+      "member_serial": 2,
+      "month": "2026-09",
+      "expected_amount": 1500,
+      "amount": 0,
+      "paid_date": "",
+      "note": ""
+    },
+    {
+      "member_serial": 3,
+      "month": "2026-09",
+      "expected_amount": 1500,
+      "amount": 0,
+      "paid_date": "",
+      "note": ""
+    },
+    {
+      "member_serial": 4,
+      "month": "2026-09",
+      "expected_amount": 1500,
+      "amount": 0,
+      "paid_date": "",
+      "note": ""
+    },
+    {
+      "member_serial": 5,
+      "month": "2026-09",
+      "expected_amount": 1500,
+      "amount": 0,
+      "paid_date": "",
+      "note": ""
+    },
+    {
+      "member_serial": 6,
+      "month": "2026-09",
+      "expected_amount": 1500,
+      "amount": 0,
+      "paid_date": "",
+      "note": ""
+    },
+    {
+      "member_serial": 7,
+      "month": "2026-09",
+      "expected_amount": 1500,
+      "amount": 0,
+      "paid_date": "",
+      "note": ""
+    },
+    {
+      "member_serial": 8,
+      "month": "2026-09",
+      "expected_amount": 1500,
+      "amount": 0,
+      "paid_date": "",
+      "note": ""
+    },
+    {
+      "member_serial": 9,
+      "month": "2026-09",
+      "expected_amount": 1500,
+      "amount": 0,
+      "paid_date": "",
+      "note": ""
+    },
+    {
+      "member_serial": 10,
+      "month": "2026-09",
+      "expected_amount": 1500,
+      "amount": 0,
+      "paid_date": "",
+      "note": ""
+    },
+    {
+      "member_serial": 11,
+      "month": "2026-09",
+      "expected_amount": 1500,
+      "amount": 0,
+      "paid_date": "",
+      "note": ""
+    },
+    {
+      "member_serial": 12,
+      "month": "2026-09",
+      "expected_amount": 1500,
+      "amount": 0,
+      "paid_date": "",
+      "note": ""
+    },
+    {
+      "member_serial": 13,
+      "month": "2026-09",
+      "expected_amount": 1500,
+      "amount": 0,
+      "paid_date": "",
+      "note": ""
+    },
+    {
+      "member_serial": 14,
+      "month": "2026-09",
+      "expected_amount": 1500,
+      "amount": 0,
+      "paid_date": "",
+      "note": ""
+    },
+    {
+      "member_serial": 15,
+      "month": "2026-09",
+      "expected_amount": 1500,
+      "amount": 0,
+      "paid_date": "",
+      "note": ""
+    },
+    {
+      "member_serial": 16,
+      "month": "2026-09",
+      "expected_amount": 1500,
+      "amount": 0,
+      "paid_date": "",
+      "note": ""
+    },
+    {
+      "member_serial": 17,
+      "month": "2026-09",
+      "expected_amount": 1500,
+      "amount": 0,
+      "paid_date": "",
+      "note": ""
+    },
+    {
+      "member_serial": 18,
+      "month": "2026-09",
+      "expected_amount": 1500,
+      "amount": 0,
+      "paid_date": "",
+      "note": ""
+    },
+    {
+      "member_serial": 19,
+      "month": "2026-09",
+      "expected_amount": 1500,
+      "amount": 0,
+      "paid_date": "",
+      "note": ""
+    },
+    {
+      "member_serial": 20,
+      "month": "2026-09",
+      "expected_amount": 1500,
+      "amount": 0,
+      "paid_date": "",
+      "note": ""
+    },
+    {
+      "member_serial": 21,
+      "month": "2026-09",
+      "expected_amount": 1500,
+      "amount": 0,
+      "paid_date": "",
+      "note": ""
+    },
+    {
+      "member_serial": 22,
+      "month": "2026-09",
+      "expected_amount": 1500,
+      "amount": 0,
+      "paid_date": "",
+      "note": ""
+    },
+    {
+      "member_serial": 23,
+      "month": "2026-09",
+      "expected_amount": 1500,
+      "amount": 0,
+      "paid_date": "",
+      "note": ""
+    },
+    {
+      "member_serial": 24,
+      "month": "2026-09",
+      "expected_amount": 1500,
+      "amount": 0,
+      "paid_date": "",
+      "note": ""
+    },
+    {
+      "member_serial": 25,
+      "month": "2026-09",
+      "expected_amount": 1500,
+      "amount": 0,
+      "paid_date": "",
+      "note": ""
     }
   ],
   "expenses": [
