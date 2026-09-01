@@ -1,16 +1,12 @@
 {
   "org_name": "স্বপ্নযাত্রা",
   "due_day": 10,
-  "last_updated": "2026-09-01",
+  "last_updated": "2026-08-29",
   "summary": {
-    "monthly_contribution_21_members_through_august": 147000,
-    "new_members_august_total": 35000,
-    "total_cash_received": 182000,
-    "investment_to_shafiqul_islam": 100000,
-    "bank_account_expense": 1000,
-    "other_expenses": 3680,
-    "total_outflow": 104680,
-    "current_cash": 77320
+    "total_collected": 182000,
+    "total_expenses": 4680,
+    "total_invested": 100000,
+    "as_of": "2026-08"
   },
   "members": [
     {
@@ -31,7 +27,7 @@
     },
     {
       "serial_no": 5,
-      "name": "ফয়জুল ইসলাম"
+      "name": "ফয়জুল ইসলাম"
     },
     {
       "serial_no": 6,
@@ -51,11 +47,11 @@
     },
     {
       "serial_no": 10,
-      "name": "আব্দুল ওয়াহাব"
+      "name": "আব্দুল ওয়াহাব"
     },
     {
       "serial_no": 11,
-      "name": "রায়হান"
+      "name": "রায়হান"
     },
     {
       "serial_no": 12,
@@ -63,7 +59,7 @@
     },
     {
       "serial_no": 13,
-      "name": "জুয়েল"
+      "name": "জুয়েল"
     },
     {
       "serial_no": 14,
@@ -117,227 +113,917 @@
   "contributions": [
     {
       "member_serial": 1,
+      "month": "2026-04",
+      "expected_amount": 1000,
+      "amount": 1000,
+      "paid_date": "2026-04-01",
+      "note": ""
+    },
+    {
+      "member_serial": 2,
+      "month": "2026-04",
+      "expected_amount": 1000,
+      "amount": 1000,
+      "paid_date": "2026-04-01",
+      "note": ""
+    },
+    {
+      "member_serial": 3,
+      "month": "2026-04",
+      "expected_amount": 1000,
+      "amount": 1000,
+      "paid_date": "2026-04-01",
+      "note": ""
+    },
+    {
+      "member_serial": 4,
+      "month": "2026-04",
+      "expected_amount": 1000,
+      "amount": 1000,
+      "paid_date": "2026-04-01",
+      "note": ""
+    },
+    {
+      "member_serial": 5,
+      "month": "2026-04",
+      "expected_amount": 1000,
+      "amount": 1000,
+      "paid_date": "2026-04-01",
+      "note": ""
+    },
+    {
+      "member_serial": 6,
+      "month": "2026-04",
+      "expected_amount": 1000,
+      "amount": 1000,
+      "paid_date": "2026-04-01",
+      "note": ""
+    },
+    {
+      "member_serial": 7,
+      "month": "2026-04",
+      "expected_amount": 1000,
+      "amount": 1000,
+      "paid_date": "2026-04-01",
+      "note": ""
+    },
+    {
+      "member_serial": 8,
+      "month": "2026-04",
+      "expected_amount": 1000,
+      "amount": 1000,
+      "paid_date": "2026-04-01",
+      "note": ""
+    },
+    {
+      "member_serial": 9,
+      "month": "2026-04",
+      "expected_amount": 1000,
+      "amount": 1000,
+      "paid_date": "2026-04-01",
+      "note": ""
+    },
+    {
+      "member_serial": 10,
+      "month": "2026-04",
+      "expected_amount": 1000,
+      "amount": 1000,
+      "paid_date": "2026-04-01",
+      "note": ""
+    },
+    {
+      "member_serial": 11,
+      "month": "2026-04",
+      "expected_amount": 1000,
+      "amount": 1000,
+      "paid_date": "2026-04-01",
+      "note": ""
+    },
+    {
+      "member_serial": 12,
+      "month": "2026-04",
+      "expected_amount": 1000,
+      "amount": 1000,
+      "paid_date": "2026-04-01",
+      "note": ""
+    },
+    {
+      "member_serial": 13,
+      "month": "2026-04",
+      "expected_amount": 1000,
+      "amount": 1000,
+      "paid_date": "2026-04-01",
+      "note": ""
+    },
+    {
+      "member_serial": 14,
+      "month": "2026-04",
+      "expected_amount": 1000,
+      "amount": 1000,
+      "paid_date": "2026-04-01",
+      "note": ""
+    },
+    {
+      "member_serial": 15,
+      "month": "2026-04",
+      "expected_amount": 1000,
+      "amount": 1000,
+      "paid_date": "2026-04-01",
+      "note": ""
+    },
+    {
+      "member_serial": 16,
+      "month": "2026-04",
+      "expected_amount": 1000,
+      "amount": 1000,
+      "paid_date": "2026-04-01",
+      "note": ""
+    },
+    {
+      "member_serial": 17,
+      "month": "2026-04",
+      "expected_amount": 1000,
+      "amount": 1000,
+      "paid_date": "2026-04-01",
+      "note": ""
+    },
+    {
+      "member_serial": 19,
+      "month": "2026-04",
+      "expected_amount": 1000,
+      "amount": 1000,
+      "paid_date": "2026-04-01",
+      "note": ""
+    },
+    {
+      "member_serial": 20,
+      "month": "2026-04",
+      "expected_amount": 1000,
+      "amount": 1000,
+      "paid_date": "2026-04-01",
+      "note": ""
+    },
+    {
+      "member_serial": 21,
+      "month": "2026-04",
+      "expected_amount": 1000,
+      "amount": 1000,
+      "paid_date": "2026-04-01",
+      "note": ""
+    },
+    {
+      "member_serial": 22,
+      "month": "2026-04",
+      "expected_amount": 1000,
+      "amount": 1000,
+      "paid_date": "2026-04-01",
+      "note": ""
+    },
+    {
+      "member_serial": 1,
+      "month": "2026-05",
+      "expected_amount": 2000,
+      "amount": 2000,
+      "paid_date": "",
+      "note": "ঈদ বোনাসসহ"
+    },
+    {
+      "member_serial": 2,
+      "month": "2026-05",
+      "expected_amount": 2000,
+      "amount": 2000,
+      "paid_date": "",
+      "note": "ঈদ বোনাসসহ"
+    },
+    {
+      "member_serial": 3,
+      "month": "2026-05",
+      "expected_amount": 2000,
+      "amount": 2000,
+      "paid_date": "",
+      "note": "ঈদ বোনাসসহ"
+    },
+    {
+      "member_serial": 4,
+      "month": "2026-05",
+      "expected_amount": 2000,
+      "amount": 2000,
+      "paid_date": "",
+      "note": "ঈদ বোনাসসহ"
+    },
+    {
+      "member_serial": 5,
+      "month": "2026-05",
+      "expected_amount": 2000,
+      "amount": 2000,
+      "paid_date": "",
+      "note": "ঈদ বোনাসসহ"
+    },
+    {
+      "member_serial": 6,
+      "month": "2026-05",
+      "expected_amount": 2000,
+      "amount": 2000,
+      "paid_date": "",
+      "note": "ঈদ বোনাসসহ"
+    },
+    {
+      "member_serial": 7,
+      "month": "2026-05",
+      "expected_amount": 2000,
+      "amount": 2000,
+      "paid_date": "",
+      "note": "ঈদ বোনাসসহ"
+    },
+    {
+      "member_serial": 8,
+      "month": "2026-05",
+      "expected_amount": 2000,
+      "amount": 2000,
+      "paid_date": "",
+      "note": "ঈদ বোনাসসহ"
+    },
+    {
+      "member_serial": 9,
+      "month": "2026-05",
+      "expected_amount": 2000,
+      "amount": 2000,
+      "paid_date": "",
+      "note": "ঈদ বোনাসসহ"
+    },
+    {
+      "member_serial": 10,
+      "month": "2026-05",
+      "expected_amount": 2000,
+      "amount": 2000,
+      "paid_date": "",
+      "note": "ঈদ বোনাসসহ"
+    },
+    {
+      "member_serial": 11,
+      "month": "2026-05",
+      "expected_amount": 2000,
+      "amount": 2000,
+      "paid_date": "",
+      "note": "ঈদ বোনাসসহ"
+    },
+    {
+      "member_serial": 12,
+      "month": "2026-05",
+      "expected_amount": 2000,
+      "amount": 2000,
+      "paid_date": "",
+      "note": "ঈদ বোনাসসহ"
+    },
+    {
+      "member_serial": 13,
+      "month": "2026-05",
+      "expected_amount": 2000,
+      "amount": 2000,
+      "paid_date": "",
+      "note": "ঈদ বোনাসসহ"
+    },
+    {
+      "member_serial": 14,
+      "month": "2026-05",
+      "expected_amount": 2000,
+      "amount": 2000,
+      "paid_date": "",
+      "note": "ঈদ বোনাসসহ"
+    },
+    {
+      "member_serial": 15,
+      "month": "2026-05",
+      "expected_amount": 2000,
+      "amount": 2000,
+      "paid_date": "",
+      "note": "ঈদ বোনাসসহ"
+    },
+    {
+      "member_serial": 16,
+      "month": "2026-05",
+      "expected_amount": 2000,
+      "amount": 2000,
+      "paid_date": "",
+      "note": "ঈদ বোনাসসহ"
+    },
+    {
+      "member_serial": 17,
+      "month": "2026-05",
+      "expected_amount": 2000,
+      "amount": 2000,
+      "paid_date": "",
+      "note": "ঈদ বোনাসসহ"
+    },
+    {
+      "member_serial": 19,
+      "month": "2026-05",
+      "expected_amount": 2000,
+      "amount": 2000,
+      "paid_date": "",
+      "note": "ঈদ বোনাসসহ"
+    },
+    {
+      "member_serial": 20,
+      "month": "2026-05",
+      "expected_amount": 2000,
+      "amount": 2000,
+      "paid_date": "",
+      "note": "ঈদ বোনাসসহ"
+    },
+    {
+      "member_serial": 21,
+      "month": "2026-05",
+      "expected_amount": 2000,
+      "amount": 2000,
+      "paid_date": "",
+      "note": "ঈদ বোনাসসহ"
+    },
+    {
+      "member_serial": 22,
+      "month": "2026-05",
+      "expected_amount": 2000,
+      "amount": 2000,
+      "paid_date": "",
+      "note": "ঈদ বোনাসসহ"
+    },
+    {
+      "member_serial": 1,
+      "month": "2026-06",
+      "expected_amount": 1000,
+      "amount": 1000,
+      "paid_date": "",
+      "note": ""
+    },
+    {
+      "member_serial": 2,
+      "month": "2026-06",
+      "expected_amount": 1000,
+      "amount": 1000,
+      "paid_date": "",
+      "note": ""
+    },
+    {
+      "member_serial": 3,
+      "month": "2026-06",
+      "expected_amount": 1000,
+      "amount": 1000,
+      "paid_date": "",
+      "note": ""
+    },
+    {
+      "member_serial": 4,
+      "month": "2026-06",
+      "expected_amount": 1000,
+      "amount": 1000,
+      "paid_date": "",
+      "note": ""
+    },
+    {
+      "member_serial": 5,
+      "month": "2026-06",
+      "expected_amount": 1000,
+      "amount": 1000,
+      "paid_date": "",
+      "note": ""
+    },
+    {
+      "member_serial": 6,
+      "month": "2026-06",
+      "expected_amount": 1000,
+      "amount": 1000,
+      "paid_date": "",
+      "note": ""
+    },
+    {
+      "member_serial": 7,
+      "month": "2026-06",
+      "expected_amount": 1000,
+      "amount": 1000,
+      "paid_date": "",
+      "note": ""
+    },
+    {
+      "member_serial": 8,
+      "month": "2026-06",
+      "expected_amount": 1000,
+      "amount": 1000,
+      "paid_date": "",
+      "note": ""
+    },
+    {
+      "member_serial": 9,
+      "month": "2026-06",
+      "expected_amount": 1000,
+      "amount": 1000,
+      "paid_date": "",
+      "note": ""
+    },
+    {
+      "member_serial": 10,
+      "month": "2026-06",
+      "expected_amount": 1000,
+      "amount": 1000,
+      "paid_date": "",
+      "note": ""
+    },
+    {
+      "member_serial": 11,
+      "month": "2026-06",
+      "expected_amount": 1000,
+      "amount": 1000,
+      "paid_date": "",
+      "note": ""
+    },
+    {
+      "member_serial": 12,
+      "month": "2026-06",
+      "expected_amount": 1000,
+      "amount": 1000,
+      "paid_date": "",
+      "note": ""
+    },
+    {
+      "member_serial": 13,
+      "month": "2026-06",
+      "expected_amount": 1000,
+      "amount": 1000,
+      "paid_date": "",
+      "note": ""
+    },
+    {
+      "member_serial": 14,
+      "month": "2026-06",
+      "expected_amount": 1000,
+      "amount": 1000,
+      "paid_date": "",
+      "note": ""
+    },
+    {
+      "member_serial": 15,
+      "month": "2026-06",
+      "expected_amount": 1000,
+      "amount": 1000,
+      "paid_date": "",
+      "note": ""
+    },
+    {
+      "member_serial": 16,
+      "month": "2026-06",
+      "expected_amount": 1000,
+      "amount": 1000,
+      "paid_date": "",
+      "note": ""
+    },
+    {
+      "member_serial": 17,
+      "month": "2026-06",
+      "expected_amount": 1000,
+      "amount": 1000,
+      "paid_date": "",
+      "note": ""
+    },
+    {
+      "member_serial": 19,
+      "month": "2026-06",
+      "expected_amount": 1000,
+      "amount": 1000,
+      "paid_date": "",
+      "note": ""
+    },
+    {
+      "member_serial": 20,
+      "month": "2026-06",
+      "expected_amount": 1000,
+      "amount": 1000,
+      "paid_date": "",
+      "note": ""
+    },
+    {
+      "member_serial": 21,
+      "month": "2026-06",
+      "expected_amount": 1000,
+      "amount": 1000,
+      "paid_date": "",
+      "note": ""
+    },
+    {
+      "member_serial": 22,
+      "month": "2026-06",
+      "expected_amount": 1000,
+      "amount": 1000,
+      "paid_date": "",
+      "note": ""
+    },
+    {
+      "member_serial": 1,
+      "month": "2026-07",
+      "expected_amount": 1000,
+      "amount": 1000,
+      "paid_date": "",
+      "note": ""
+    },
+    {
+      "member_serial": 2,
+      "month": "2026-07",
+      "expected_amount": 1000,
+      "amount": 1000,
+      "paid_date": "",
+      "note": ""
+    },
+    {
+      "member_serial": 3,
+      "month": "2026-07",
+      "expected_amount": 1000,
+      "amount": 1000,
+      "paid_date": "",
+      "note": ""
+    },
+    {
+      "member_serial": 4,
+      "month": "2026-07",
+      "expected_amount": 1000,
+      "amount": 1000,
+      "paid_date": "",
+      "note": ""
+    },
+    {
+      "member_serial": 5,
+      "month": "2026-07",
+      "expected_amount": 1000,
+      "amount": 1000,
+      "paid_date": "",
+      "note": ""
+    },
+    {
+      "member_serial": 6,
+      "month": "2026-07",
+      "expected_amount": 1000,
+      "amount": 1000,
+      "paid_date": "",
+      "note": ""
+    },
+    {
+      "member_serial": 7,
+      "month": "2026-07",
+      "expected_amount": 1000,
+      "amount": 1000,
+      "paid_date": "",
+      "note": ""
+    },
+    {
+      "member_serial": 8,
+      "month": "2026-07",
+      "expected_amount": 1000,
+      "amount": 1000,
+      "paid_date": "",
+      "note": ""
+    },
+    {
+      "member_serial": 9,
+      "month": "2026-07",
+      "expected_amount": 1000,
+      "amount": 1000,
+      "paid_date": "",
+      "note": ""
+    },
+    {
+      "member_serial": 10,
+      "month": "2026-07",
+      "expected_amount": 1000,
+      "amount": 1000,
+      "paid_date": "",
+      "note": ""
+    },
+    {
+      "member_serial": 11,
+      "month": "2026-07",
+      "expected_amount": 1000,
+      "amount": 1000,
+      "paid_date": "",
+      "note": ""
+    },
+    {
+      "member_serial": 12,
+      "month": "2026-07",
+      "expected_amount": 1000,
+      "amount": 1000,
+      "paid_date": "",
+      "note": ""
+    },
+    {
+      "member_serial": 13,
+      "month": "2026-07",
+      "expected_amount": 1000,
+      "amount": 1000,
+      "paid_date": "",
+      "note": ""
+    },
+    {
+      "member_serial": 14,
+      "month": "2026-07",
+      "expected_amount": 1000,
+      "amount": 1000,
+      "paid_date": "",
+      "note": ""
+    },
+    {
+      "member_serial": 15,
+      "month": "2026-07",
+      "expected_amount": 1000,
+      "amount": 1000,
+      "paid_date": "",
+      "note": ""
+    },
+    {
+      "member_serial": 16,
+      "month": "2026-07",
+      "expected_amount": 1000,
+      "amount": 1000,
+      "paid_date": "",
+      "note": ""
+    },
+    {
+      "member_serial": 17,
+      "month": "2026-07",
+      "expected_amount": 1000,
+      "amount": 1000,
+      "paid_date": "",
+      "note": ""
+    },
+    {
+      "member_serial": 19,
+      "month": "2026-07",
+      "expected_amount": 1000,
+      "amount": 1000,
+      "paid_date": "",
+      "note": ""
+    },
+    {
+      "member_serial": 20,
+      "month": "2026-07",
+      "expected_amount": 1000,
+      "amount": 1000,
+      "paid_date": "",
+      "note": ""
+    },
+    {
+      "member_serial": 21,
+      "month": "2026-07",
+      "expected_amount": 1000,
+      "amount": 1000,
+      "paid_date": "",
+      "note": ""
+    },
+    {
+      "member_serial": 22,
+      "month": "2026-07",
+      "expected_amount": 1000,
+      "amount": 1000,
+      "paid_date": "",
+      "note": ""
+    },
+    {
+      "member_serial": 1,
       "month": "2026-08",
-      "expected_amount": 7000,
-      "amount": 7000,
-      "paid_date": null,
-      "note": "আগস্ট পর্যন্ত মাসিক চাঁদার মোট জমা (ব্যক্তিপ্রতি ৳৭,০০০ হিসেবে সংরক্ষিত)"
+      "expected_amount": 1500,
+      "amount": 1500,
+      "paid_date": "2026-08-05",
+      "note": ""
     },
     {
       "member_serial": 2,
       "month": "2026-08",
-      "expected_amount": 7000,
-      "amount": 7000,
-      "paid_date": null,
-      "note": "আগস্ট পর্যন্ত মাসিক চাঁদার মোট জমা (ব্যক্তিপ্রতি ৳৭,০০০ হিসেবে সংরক্ষিত)"
+      "expected_amount": 1500,
+      "amount": 1500,
+      "paid_date": "2026-08-06",
+      "note": ""
     },
     {
       "member_serial": 3,
       "month": "2026-08",
-      "expected_amount": 7000,
-      "amount": 7000,
-      "paid_date": null,
-      "note": "আগস্ট পর্যন্ত মাসিক চাঁদার মোট জমা (ব্যক্তিপ্রতি ৳৭,০০০ হিসেবে সংরক্ষিত)"
+      "expected_amount": 1500,
+      "amount": 1500,
+      "paid_date": "2026-08-01",
+      "note": ""
     },
     {
       "member_serial": 4,
       "month": "2026-08",
-      "expected_amount": 7000,
-      "amount": 7000,
-      "paid_date": null,
-      "note": "আগস্ট পর্যন্ত মাসিক চাঁদার মোট জমা (ব্যক্তিপ্রতি ৳৭,০০০ হিসেবে সংরক্ষিত)"
+      "expected_amount": 1500,
+      "amount": 1500,
+      "paid_date": "2026-08-01",
+      "note": ""
     },
     {
       "member_serial": 5,
       "month": "2026-08",
-      "expected_amount": 7000,
-      "amount": 7000,
-      "paid_date": null,
-      "note": "আগস্ট পর্যন্ত মাসিক চাঁদার মোট জমা (ব্যক্তিপ্রতি ৳৭,০০০ হিসেবে সংরক্ষিত)"
+      "expected_amount": 1500,
+      "amount": 1500,
+      "paid_date": "2026-08-01",
+      "note": ""
     },
     {
       "member_serial": 6,
       "month": "2026-08",
-      "expected_amount": 7000,
-      "amount": 7000,
-      "paid_date": null,
-      "note": "আগস্ট পর্যন্ত মাসিক চাঁদার মোট জমা (ব্যক্তিপ্রতি ৳৭,০০০ হিসেবে সংরক্ষিত)"
+      "expected_amount": 1500,
+      "amount": 1500,
+      "paid_date": "2026-08-07",
+      "note": ""
     },
     {
       "member_serial": 7,
       "month": "2026-08",
-      "expected_amount": 7000,
-      "amount": 7000,
-      "paid_date": null,
-      "note": "আগস্ট পর্যন্ত মাসিক চাঁদার মোট জমা (ব্যক্তিপ্রতি ৳৭,০০০ হিসেবে সংরক্ষিত)"
+      "expected_amount": 1500,
+      "amount": 1500,
+      "paid_date": "2026-08-01",
+      "note": ""
     },
     {
       "member_serial": 8,
       "month": "2026-08",
-      "expected_amount": 7000,
-      "amount": 7000,
-      "paid_date": null,
-      "note": "আগস্ট পর্যন্ত মাসিক চাঁদার মোট জমা (ব্যক্তিপ্রতি ৳৭,০০০ হিসেবে সংরক্ষিত)"
+      "expected_amount": 1500,
+      "amount": 1500,
+      "paid_date": "2026-08-01",
+      "note": ""
     },
     {
       "member_serial": 9,
       "month": "2026-08",
-      "expected_amount": 7000,
-      "amount": 7000,
-      "paid_date": null,
-      "note": "আগস্ট পর্যন্ত মাসিক চাঁদার মোট জমা (ব্যক্তিপ্রতি ৳৭,০০০ হিসেবে সংরক্ষিত)"
+      "expected_amount": 1500,
+      "amount": 1500,
+      "paid_date": "2026-08-01",
+      "note": ""
     },
     {
       "member_serial": 10,
       "month": "2026-08",
-      "expected_amount": 7000,
-      "amount": 7000,
-      "paid_date": null,
-      "note": "আগস্ট পর্যন্ত মাসিক চাঁদার মোট জমা (ব্যক্তিপ্রতি ৳৭,০০০ হিসেবে সংরক্ষিত)"
+      "expected_amount": 1500,
+      "amount": 1500,
+      "paid_date": "2026-08-01",
+      "note": ""
     },
     {
       "member_serial": 11,
       "month": "2026-08",
-      "expected_amount": 7000,
-      "amount": 7000,
-      "paid_date": null,
-      "note": "আগস্ট পর্যন্ত মাসিক চাঁদার মোট জমা (ব্যক্তিপ্রতি ৳৭,০০০ হিসেবে সংরক্ষিত)"
+      "expected_amount": 1500,
+      "amount": 1500,
+      "paid_date": "2026-08-08",
+      "note": ""
     },
     {
       "member_serial": 12,
       "month": "2026-08",
-      "expected_amount": 7000,
-      "amount": 7000,
-      "paid_date": null,
-      "note": "আগস্ট পর্যন্ত মাসিক চাঁদার মোট জমা (ব্যক্তিপ্রতি ৳৭,০০০ হিসেবে সংরক্ষিত)"
+      "expected_amount": 1500,
+      "amount": 1500,
+      "paid_date": "2026-08-01",
+      "note": ""
     },
     {
       "member_serial": 13,
       "month": "2026-08",
-      "expected_amount": 7000,
-      "amount": 7000,
-      "paid_date": null,
-      "note": "আগস্ট পর্যন্ত মাসিক চাঁদার মোট জমা (ব্যক্তিপ্রতি ৳৭,০০০ হিসেবে সংরক্ষিত)"
+      "expected_amount": 1500,
+      "amount": 1500,
+      "paid_date": "2026-08-01",
+      "note": ""
     },
     {
       "member_serial": 14,
       "month": "2026-08",
-      "expected_amount": 7000,
-      "amount": 7000,
-      "paid_date": null,
-      "note": "আগস্ট পর্যন্ত মাসিক চাঁদার মোট জমা (ব্যক্তিপ্রতি ৳৭,০০০ হিসেবে সংরক্ষিত)"
+      "expected_amount": 1500,
+      "amount": 1500,
+      "paid_date": "2026-08-01",
+      "note": ""
     },
     {
       "member_serial": 15,
       "month": "2026-08",
-      "expected_amount": 7000,
-      "amount": 7000,
-      "paid_date": null,
-      "note": "আগস্ট পর্যন্ত মাসিক চাঁদার মোট জমা (ব্যক্তিপ্রতি ৳৭,০০০ হিসেবে সংরক্ষিত)"
+      "expected_amount": 1500,
+      "amount": 1500,
+      "paid_date": "2026-08-01",
+      "note": ""
     },
     {
       "member_serial": 16,
       "month": "2026-08",
-      "expected_amount": 7000,
-      "amount": 7000,
-      "paid_date": null,
-      "note": "আগস্ট পর্যন্ত মাসিক চাঁদার মোট জমা (ব্যক্তিপ্রতি ৳৭,০০০ হিসেবে সংরক্ষিত)"
+      "expected_amount": 1500,
+      "amount": 1500,
+      "paid_date": "2026-08-01",
+      "note": ""
     },
     {
       "member_serial": 17,
       "month": "2026-08",
-      "expected_amount": 7000,
-      "amount": 7000,
-      "paid_date": null,
-      "note": "আগস্ট পর্যন্ত মাসিক চাঁদার মোট জমা (ব্যক্তিপ্রতি ৳৭,০০০ হিসেবে সংরক্ষিত)"
-    },
-    {
-      "member_serial": 18,
-      "month": "2026-08",
-      "expected_amount": 7000,
-      "amount": 7000,
-      "paid_date": null,
-      "note": "আগস্ট পর্যন্ত মাসিক চাঁদার মোট জমা (ব্যক্তিপ্রতি ৳৭,০০০ হিসেবে সংরক্ষিত)"
+      "expected_amount": 1500,
+      "amount": 1500,
+      "paid_date": "2026-08-01",
+      "note": ""
     },
     {
       "member_serial": 19,
       "month": "2026-08",
-      "expected_amount": 7000,
-      "amount": 7000,
-      "paid_date": null,
-      "note": "আগস্ট পর্যন্ত মাসিক চাঁদার মোট জমা (ব্যক্তিপ্রতি ৳৭,০০০ হিসেবে সংরক্ষিত)"
+      "expected_amount": 1500,
+      "amount": 1500,
+      "paid_date": "2026-08-01",
+      "note": ""
     },
     {
       "member_serial": 20,
       "month": "2026-08",
-      "expected_amount": 7000,
-      "amount": 7000,
-      "paid_date": null,
-      "note": "আগস্ট পর্যন্ত মাসিক চাঁদার মোট জমা (ব্যক্তিপ্রতি ৳৭,০০০ হিসেবে সংরক্ষিত)"
+      "expected_amount": 1500,
+      "amount": 1500,
+      "paid_date": "2026-08-01",
+      "note": ""
     },
     {
       "member_serial": 21,
       "month": "2026-08",
-      "expected_amount": 7000,
-      "amount": 7000,
-      "paid_date": null,
-      "note": "আগস্ট পর্যন্ত মাসিক চাঁদার মোট জমা (ব্যক্তিপ্রতি ৳৭,০০০ হিসেবে সংরক্ষিত)"
+      "expected_amount": 1500,
+      "amount": 1500,
+      "paid_date": "2026-08-01",
+      "note": ""
+    },
+    {
+      "member_serial": 22,
+      "month": "2026-08",
+      "expected_amount": 1500,
+      "amount": 1500,
+      "paid_date": "2026-08-01",
+      "note": ""
     },
     {
       "member_serial": 18,
       "month": "2026-08",
       "expected_amount": 10000,
       "amount": 10000,
-      "paid_date": null,
-      "note": "আগস্টে নতুন সদস্য হিসেবে এককালীন জমা"
+      "paid_date": "2026-08-10",
+      "note": "নতুন সদস্য হিসেবে একবারে জমা"
     },
     {
       "member_serial": 23,
       "month": "2026-08",
       "expected_amount": 9000,
       "amount": 9000,
-      "paid_date": null,
-      "note": "আগস্টে নতুন সদস্য হিসেবে এককালীন জমা"
+      "paid_date": "2026-08-10",
+      "note": "নতুন সদস্য হিসেবে একবারে জমা"
     },
     {
       "member_serial": 25,
       "month": "2026-08",
       "expected_amount": 8000,
       "amount": 8000,
-      "paid_date": null,
-      "note": "আগস্টে নতুন সদস্য হিসেবে এককালীন জমা"
+      "paid_date": "2026-08-10",
+      "note": "নতুন সদস্য হিসেবে একবারে জমা"
     },
     {
       "member_serial": 24,
       "month": "2026-08",
       "expected_amount": 8000,
       "amount": 8000,
-      "paid_date": null,
-      "note": "আগস্টে নতুন সদস্য হিসেবে এককালীন জমা"
+      "paid_date": "2026-08-10",
+      "note": "নতুন সদস্য হিসেবে একবারে জমা"
     }
   ],
   "expenses": [
     {
-      "date": "2026-08-01",
-      "name": "ব্যাংক একাউন্ট খোলা",
-      "amount": 1000,
+      "title": "রেজিস্টার খাতা",
+      "date": "2026-03-25",
+      "amount": 220,
       "note": ""
     },
     {
-      "date": null,
-      "name": "অন্যান্য খরচ",
-      "amount": 3680,
-      "note": "পূর্বের হিসাবের অন্যান্য খরচসমূহের মোট"
+      "title": "স্ট্যাম্প",
+      "date": "2026-05-30",
+      "amount": 480,
+      "note": ""
+    },
+    {
+      "title": "কম্পিউটার খরচ",
+      "date": "2026-07-30",
+      "amount": 1880,
+      "note": ""
+    },
+    {
+      "title": "গাছ রোপণ",
+      "date": "2026-08-06",
+      "amount": 1100,
+      "note": ""
+    },
+    {
+      "title": "ব্যাংক অ্যাকাউন্ট খোলা",
+      "date": "2026-08-10",
+      "amount": 1000,
+      "note": ""
     }
   ],
   "investments": [
     {
       "name": "শফিকুল ইসলামকে ব্যবসার জন্য প্রদান",
-      "date": null,
+      "date": "",
       "amount": 100000,
       "current_value": 100000,
       "status": "চলমান",
-      "note": "সংগঠনের মোট টাকা থেকে ব্যবসার জন্য প্রদান করা হয়েছে।"
+      "note": "ব্যবসায়িক বিনিয়োগ"
     }
   ]
 }
