@@ -1,7 +1,7 @@
 const $ = id => document.getElementById(id);
 const PIN = "sopno2026"; // চাইলে এই পাসকোড বদলে দিন
 
-let state = { org_name: "স্বপ্নযাত্রা", due_day: 10, members: [], contributions: [], investments: [] };
+let state = { org_name: "স্বপ্নযাত্রা", due_day: 10, summary: {total_collected:0, total_expenses:0, total_invested:0}, members: [], contributions: [], investments: [], expenses: [] };
 let currentAdminMonth = new Date().toISOString().slice(0, 7);
 
 function checkPin() {
@@ -48,6 +48,8 @@ function normalizeState() {
   state.members = state.members || [];
   state.contributions = state.contributions || [];
   state.investments = state.investments || [];
+  state.expenses = state.expenses || [];
+  state.summary = state.summary || {total_collected:0, total_expenses:0, total_invested:0};
   state.due_day = state.due_day || 10;
   const months = [...new Set(state.contributions.map(c => c.month))].sort();
   currentAdminMonth = months.length ? months[months.length - 1] : currentAdminMonth;
@@ -62,10 +64,22 @@ function msg(id, text, ok) {
 function populateForm() {
   $("orgName").value = state.org_name || "স্বপ্নযাত্রা";
   $("dueDay").value = state.due_day || 10;
+  $("sumCollected").value = state.summary.total_collected || 0;
+  $("sumExpenses").value = state.summary.total_expenses || 0;
+  $("sumInvested").value = state.summary.total_invested || 0;
+  updateCashPreview();
   renderMembers();
   renderMonthPick();
   renderContribRows();
   renderInvestments();
+  renderExpenses();
+}
+
+function updateCashPreview() {
+  const c = Number($("sumCollected").value) || 0;
+  const e = Number($("sumExpenses").value) || 0;
+  const i = Number($("sumInvested").value) || 0;
+  $("sumCashPreview").textContent = "৳" + (c - e - i).toLocaleString("en-US");
 }
 
 /* ---------- MEMBERS ---------- */
@@ -160,6 +174,14 @@ document.addEventListener("change", e => {
     currentAdminMonth = e.target.value;
     renderContribRows();
   }
+  if (["sumCollected","sumExpenses","sumInvested"].includes(e.target.id)) {
+    updateCashPreview();
+  }
+});
+document.addEventListener("input", e => {
+  if (["sumCollected","sumExpenses","sumInvested"].includes(e.target.id)) {
+    updateCashPreview();
+  }
 });
 
 /* ---------- INVESTMENTS ---------- */
@@ -196,10 +218,42 @@ function removeInvestment(idx) {
   renderInvestments();
 }
 
+/* ---------- EXPENSES ---------- */
+function renderExpenses() {
+  $("expenseRows").innerHTML = state.expenses.map((ex, idx) => `
+    <div class="panel" style="margin:12px 0;padding:16px">
+      <div class="form-grid">
+        <label>খাত<input value="${escapeHtml(ex.title)}" onchange="updateExpense(${idx},'title',this.value)"></label>
+        <label>তারিখ<input type="date" value="${ex.date || ''}" onchange="updateExpense(${idx},'date',this.value)"></label>
+        <label>পরিমাণ<input type="number" value="${ex.amount || 0}" onchange="updateExpense(${idx},'amount',this.value)"></label>
+        <label>নোট<input value="${escapeHtml(ex.note || '')}" onchange="updateExpense(${idx},'note',this.value)"></label>
+      </div>
+      <button class="secondary small-btn" onclick="removeExpense(${idx})">মুছুন</button>
+    </div>
+  `).join("") || "<p class='muted'>এখনো কোনো খরচ নেই।</p>";
+}
+function updateExpense(idx, field, val) {
+  state.expenses[idx][field] = field === 'amount' ? Number(val) : val;
+}
+function addExpense() {
+  state.expenses.push({ title: "", date: "", amount: 0, note: "" });
+  renderExpenses();
+}
+function removeExpense(idx) {
+  state.expenses.splice(idx, 1);
+  renderExpenses();
+}
+
 /* ---------- EXPORT ---------- */
 function buildFinalData() {
   state.org_name = $("orgName").value;
   state.due_day = Number($("dueDay").value) || 10;
+  state.summary = {
+    total_collected: Number($("sumCollected").value) || 0,
+    total_expenses: Number($("sumExpenses").value) || 0,
+    total_invested: Number($("sumInvested").value) || 0,
+    as_of: currentAdminMonth
+  };
   state.last_updated = new Date().toISOString().slice(0, 10);
   return state;
 }
