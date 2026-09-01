@@ -1,5 +1,6 @@
 const $ = id => document.getElementById(id);
-let members = [], contributions = [], investments = [], dueDay = 10;
+let members = [], contributions = [], investments = [], expenses = [], dueDay = 10;
+let summary = { total_collected: 0, total_expenses: 0, total_invested: 0 };
 let currentMonth = new Date().toISOString().slice(0, 7);
 
 const money = n => "৳" + Number(n || 0).toLocaleString("en-US", { maximumFractionDigits: 0 });
@@ -14,7 +15,9 @@ async function loadData() {
     members = data.members || [];
     contributions = data.contributions || [];
     investments = data.investments || [];
+    expenses = data.expenses || [];
     dueDay = data.due_day || 10;
+    summary = data.summary || { total_collected: 0, total_expenses: 0, total_invested: 0 };
 
     // pick the latest month that actually has contribution rows, else this real-world month
     const months = [...new Set(contributions.map(c => c.month))].sort();
@@ -33,11 +36,12 @@ function render() {
   $("dueSmall").textContent = `পরিশোধের শেষ সময়: প্রতি মাসের ${dueDay} তারিখ`;
   $("dueBadge").textContent = `প্রতি মাসের ${dueDay} তারিখ`;
 
-  const total = contributions.reduce((s, x) => s + Number(x.amount || 0), 0);
-  const invested = investments.reduce((s, x) => s + Number(x.amount || 0), 0);
+  const total = Number(summary.total_collected || 0);
+  const invested = Number(summary.total_invested || 0);
+  const spent = Number(summary.total_expenses || 0);
   $("totalContributions").textContent = money(total);
   $("totalInvestments").textContent = money(invested);
-  $("cashBalance").textContent = money(total - invested);
+  $("cashBalance").textContent = money(total - invested - spent);
 
   const monthRows = members.map(m => contributions.find(c => c.member_serial === m.serial_no && c.month === currentMonth));
   const paid = monthRows.filter(Boolean).length;
@@ -59,6 +63,12 @@ function render() {
     : "<p class='muted'>এখনো কোনো বিনিয়োগ যোগ করা হয়নি।</p>";
 
   $("membersGrid").innerHTML = members.map(m => `<div class="member-card"><strong>${m.serial_no}. ${escapeHtml(m.name)}</strong><small>সদস্য</small></div>`).join("");
+
+  const totalExpense = Number(summary.total_expenses || 0);
+  $("totalExpenses").textContent = money(totalExpense);
+  $("expenseRows").innerHTML = expenses.length
+    ? expenses.slice().sort((a,b)=> (a.date||"") < (b.date||"") ? 1 : -1).map(e => `<tr><td>${escapeHtml(e.title)}</td><td>${dateLabel(e.date)}</td><td>${money(e.amount)}</td><td>${escapeHtml(e.note||"")}</td></tr>`).join("")
+    : "<tr><td colspan='4' class='muted'>এখনো কোনো খরচ যোগ করা হয়নি।</td></tr>";
 }
 
 function renderContributions(month) {
